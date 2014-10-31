@@ -305,13 +305,13 @@ JSONTests : Test {
 	}
 
 	test_itShouldNotBePossibleToEncodeInfinityValueToJSON {
-		this.assertAnyErrorThrown {
+		this.assertErrorThrown(Error) {
 			(IdentityDictionary[
 				(\number -> inf)
 			]).asJSON
 		};
 
-		this.assertAnyErrorThrown {
+		this.assertErrorThrown(Error) {
 			(IdentityDictionary[
 				(\number -> -inf)
 			]).asJSON
