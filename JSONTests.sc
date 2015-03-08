@@ -141,7 +141,7 @@ JSONTests : Test {
         \"width\": 500,
         \"height\": 500
     },
-    \"image\": { 
+    \"image\": {
         \"src\": \"Images/Sun.png\",
         \"name\": \"sun1\",
         \"hOffset\": 250,
@@ -158,7 +158,7 @@ JSONTests : Test {
         \"alignment\": \"center\",
         \"onMouseUp\": \"sun1.opacity = (sun1.opacity / 100) * 90;\"
     }
-}} 
+}}
 ";
 
 		jsonDotOrgExample4 = "
